@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Página Web</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>¿Cheves?</h1>
+    <div class="buttons">
+        <button id="yes-button">Sí</button>
+        <button id="no-button">No</button>
+    </div>
+
+
+    <div class="pyramid-loader">
+        <div class="wrapper">
+          <span class="side side1"></span>
+          <span class="side side2"></span>
+          <span class="side side3"></span>
+          <span class="side side4"></span>
+          <span class="shadow"></span>
+        </div>  
+      </div>
+
+    <script>
+        document.getElementById('yes-button').addEventListener('click', function() {
+            swal("Sabía que dirías que si", "¡Fuga a Loqueaaaar!", "success");
+        });
+
+        document.getElementById('no-button').addEventListener('mouseover', function() {
+            this.style.transform = `translate(${Math.random() * 500}px, ${Math.random() * 500}px)`;
+        });
+    </script>
+</body>
+</html>
